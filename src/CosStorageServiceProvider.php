@@ -24,7 +24,5 @@ class CosStorageServiceProvider extends ServiceProvider
     /**
      * Register any application services.
      */
-    public function register()
-    {
-    }
+    public function register() {}
 }
