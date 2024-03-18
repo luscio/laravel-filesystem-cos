@@ -17,7 +17,7 @@ class CosStorageServiceProvider extends ServiceProvider
     {
         Storage::extend('cos', function ($app, $config) {
             $adapter = new CosAdapter($config);
-            return new FilesystemAdapter(new Filesystem($adapter), $adapter);
+            return new FilesystemAdapter(new Filesystem($adapter), $adapter, $config);
         });
     }
 
